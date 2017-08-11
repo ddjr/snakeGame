@@ -12,9 +12,9 @@ function reset() {
 }
 function draw() {
   // Game Logic
+  if(snake.hitTail()) { reset() }
   if(snake.didEat(apple)) { apple = new Apple() } // must go before snake.update
   snake.update()
-  if(snake.hitTail()) { reset() }
   // Drawing
   background(51)
   snake.show()

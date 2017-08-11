@@ -1,6 +1,6 @@
 class Snake {
   constructor() {
-    this.x = GRID_SCALE 
+    this.x = GRID_SCALE
     this.y = GRID_SCALE
     this.xspeed = GRID_SCALE
     this.yspeed = 0
